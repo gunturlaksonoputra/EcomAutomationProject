@@ -35,10 +35,10 @@ public class RegisterPageTest extends BaseClass {
 		homepage.goToRegisterPage();
 	}
 	
-	@Test(dataProvider = "registerdata", dataProviderClass = DataProviders.class)
-	public void registerAccount(String datatype, String firstname, String lastname, String email, String telephone, String password, String confirmpassword, String newsletter ) {
-		if(firstname.equals("")) {
-			
-		}
-	}
+//	@Test(dataProvider = "registerdata", dataProviderClass = DataProviders.class)
+//	public void registerAccount(String datatype, String firstname, String lastname, String email, String telephone, String password, String confirmpassword, String newsletter ) {
+//		if(firstname.equals("")) {
+//			
+//		}
+//	}
 }
