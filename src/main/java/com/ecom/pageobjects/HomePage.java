@@ -53,11 +53,13 @@ public class HomePage extends BaseClass{
 		loginButton.click();
 	}
 	
-	public void goToRegisterPage () {
+	public RegisterPage goToRegisterPage () {
 		actions.moveToElement(myaccountButton).build().perform();
 		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href, 'account/register')]")));
 		registerButton.click();
+		
+		return new RegisterPage();
 	}
 	
 	public SearchPage searchProduct(String productName) {

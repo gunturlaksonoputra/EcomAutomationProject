@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-17T12:26:32 WIB" name="Default suite" finished-at="2025-02-17T12:26:43 WIB" duration-ms="10620">
+  <suite started-at="2025-02-18T08:48:45 WIB" name="Suite" finished-at="2025-02-18T08:49:11 WIB" duration-ms="25238">
     <groups>
-      <group name="Sanity">
-        <method signature="EndToEndTest.moveToRegisterPage()[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" name="moveToRegisterPage" class="com.ecom.testcases.EndToEndTest"/>
-      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="RegisterPageTest.checkPrivacyPolicy()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" name="checkPrivacyPolicy" class="com.ecom.testcases.RegisterPageTest"/>
+        <method signature="RegisterPageTest.moveToRegisterPage()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" name="moveToRegisterPage" class="com.ecom.testcases.RegisterPageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-02-17T12:26:32 WIB" name="Default test" finished-at="2025-02-17T12:26:43 WIB" duration-ms="10620">
-      <class name="com.ecom.testcases.EndToEndTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" started-at="2025-02-17T12:26:32 WIB" name="loadConfig" finished-at="2025-02-17T12:26:32 WIB" duration-ms="315" status="PASS">
+    <test started-at="2025-02-18T08:48:45 WIB" name="Test" finished-at="2025-02-18T08:49:11 WIB" duration-ms="25238">
+      <class name="com.ecom.testcases.RegisterPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:48:45 WIB" name="loadConfig" finished-at="2025-02-18T08:48:45 WIB" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" started-at="2025-02-17T12:26:33 WIB" name="setup" finished-at="2025-02-17T12:26:39 WIB" duration-ms="6224" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:48:45 WIB" name="setup" finished-at="2025-02-18T08:48:59 WIB" duration-ms="13567" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,19 +26,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="moveToRegisterPage()[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" started-at="2025-02-17T12:26:39 WIB" name="moveToRegisterPage" finished-at="2025-02-17T12:26:43 WIB" duration-ms="4164" status="PASS">
+        <test-method signature="checkPrivacyPolicy()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:48:59 WIB" name="checkPrivacyPolicy" finished-at="2025-02-18T08:49:02 WIB" duration-ms="3138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- moveToRegisterPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" started-at="2025-02-17T12:26:43 WIB" name="tearDown" finished-at="2025-02-17T12:26:43 WIB" duration-ms="187" status="PASS">
+        </test-method> <!-- checkPrivacyPolicy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:49:02 WIB" name="tearDown" finished-at="2025-02-18T08:49:02 WIB" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ecom.testcases.EndToEndTest@6f03482]" started-at="2025-02-17T12:26:44 WIB" name="afterSuite" finished-at="2025-02-17T12:26:44 WIB" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:49:02 WIB" name="setup" finished-at="2025-02-18T08:49:08 WIB" duration-ms="5289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="moveToRegisterPage()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:49:08 WIB" name="moveToRegisterPage" finished-at="2025-02-18T08:49:10 WIB" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moveToRegisterPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:49:10 WIB" name="tearDown" finished-at="2025-02-18T08:49:11 WIB" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ecom.testcases.RegisterPageTest@2aceadd4]" started-at="2025-02-18T08:49:11 WIB" name="afterSuite" finished-at="2025-02-18T08:49:11 WIB" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.ecom.testcases.EndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.ecom.testcases.RegisterPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

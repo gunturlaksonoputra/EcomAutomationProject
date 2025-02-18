@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.ecom.base.BaseClass;
 import com.ecom.dataprovider.DataProviders;
 import com.ecom.pageobjects.HomePage;
+import com.ecom.pageobjects.RegisterPage;
 
 /**
  * 
@@ -35,10 +36,18 @@ public class RegisterPageTest extends BaseClass {
 		homepage.goToRegisterPage();
 	}
 	
-//	@Test(dataProvider = "registerdata", dataProviderClass = DataProviders.class)
-//	public void registerAccount(String datatype, String firstname, String lastname, String email, String telephone, String password, String confirmpassword, String newsletter ) {
-//		if(firstname.equals("")) {
-//			
-//		}
+	@Test(groups = "Regression")
+	public void checkPrivacyPolicy() {
+//		getDriver().get("https://ecommerce-playground.lambdatest.io/index.php?");
+		HomePage homepage = new HomePage();
+		RegisterPage registerpage = homepage.goToRegisterPage();
+		registerpage.checkPolicy();
+	}
+	
+//	@Test(groups = "Regression", dataProvider = "registerdata", dataProviderClass = DataProviders.class)
+//	public void registerAccount(String firstname, String lastname, String email, String telephone, String password, String confirmpassword, String newsletter ) {
+//		HomePage homepage = new HomePage();
+//		RegisterPage registerpage = homepage.goToRegisterPage();
+//		registerpage.createAccount(firstname, lastname, email, telephone, password, confirmpassword, newsletter);
 //	}
 }

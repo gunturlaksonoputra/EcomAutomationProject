@@ -17,7 +17,11 @@
 		<documentTitle>EcomAutomationProject</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
-		<reportName>EcomAutomationProject Report</reportName>
+		<reportName>EcomAutomationProject Report
+		<![CDATA[
+                <img src='http://localhost:8080/job/Maven%20sample/ws/Logo/EcomLogo.svg
+            ]]>
+		</reportName>
 
 		<!-- timestamp format -->
 		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
