@@ -1,5 +1,6 @@
 package com.ecom.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -52,8 +54,15 @@ public class BaseClass {
 		// String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
+			String uniqueDir = System.getProperty("java.io.tmpdir") + "/chrome_profile_" + System.currentTimeMillis();
+            		File profileDir = new File(uniqueDir);
+            		profileDir.mkdirs();
+
+            		ChromeOptions options = new ChromeOptions();
+            		options.addArguments("--user-data-dir=" + uniqueDir);
+
 			// Set Browser to ThreadLocalMap
-			driver.set(new ChromeDriver());
+            		driver.set(new ChromeDriver(options));
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
