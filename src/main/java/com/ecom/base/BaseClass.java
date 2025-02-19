@@ -33,8 +33,7 @@ public class BaseClass {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-//					System.getProperty("user.dir") +
-					"C:\\Users\\guntu\\eclipse-workspace\\EcomAutomationProject\\Configuration\\Config.properties");
+					System.getProperty("user.dir") + "\\Configuration\\config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
