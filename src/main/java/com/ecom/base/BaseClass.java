@@ -33,7 +33,7 @@ public class BaseClass {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"/Configuration/config.properties");
+					"Configuration/config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
