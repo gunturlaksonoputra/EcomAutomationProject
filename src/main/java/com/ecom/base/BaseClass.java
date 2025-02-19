@@ -54,15 +54,8 @@ public class BaseClass {
 		// String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
-			String uniqueDir = System.getProperty("java.io.tmpdir") + "/chrome_profile_" + System.currentTimeMillis();
-            		File profileDir = new File(uniqueDir);
-            		profileDir.mkdirs();
-
-            		ChromeOptions options = new ChromeOptions();
-            		options.addArguments("--user-data-dir=" + uniqueDir);
-
 			// Set Browser to ThreadLocalMap
-            		driver.set(new ChromeDriver(options));
+            		driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
