@@ -31,9 +31,9 @@ public class EndToEndTest extends BaseClass{
 	}
 	
 		
-	@Test(groups = "Sanity",dataProvider = "endtoendData", dataProviderClass = DataProviders.class)
-	public void endToEndTest(String username, String password, String searchprod, String product, String qty ) {
+	// @Test(groups = "Sanity",dataProvider = "endtoendData", dataProviderClass = DataProviders.class)
+	// public void endToEndTest(String username, String password, String searchprod, String product, String qty ) {
 		
-	}
+	// }
 	
 }
